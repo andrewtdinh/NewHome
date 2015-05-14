@@ -7,11 +7,11 @@ html(lang='en')
     title Andrew Trieu Dinh
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='/vendor/materialize/dist/css/materialize.min.css', media='screen,projection')
-    link(rel='stylesheet', type='text/css', href='/vendor/materialize/templates/parallax-template/css/style.css', media='screen,projection')
+    //- link(rel='stylesheet', type='text/css', href='/vendor/materialize/templates/parallax-template/css/style.css', media='screen,projection')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
-    nav.white(role='navigation')
+    nav.blue(role='navigation')
       .nav-wrapper.container
         a#logo-container.brand-logo(href='#') Logo
         ul.right.hide-on-med-and-down
@@ -35,7 +35,7 @@ html(lang='en')
           br
           br
       .parallax
-        img(src='background1.jpg', alt='Unsplashed background img 2')
+        img(src='/assets/success.jpg', alt='Unsplashed background img 2')
     .container
       .section
         // Icon Section
@@ -67,7 +67,7 @@ html(lang='en')
           .row.center
             h5.header.col.s12.light A modern responsive front-end framework based on Material Design
       .parallax
-        img(src='background3.jpg', alt='Unsplashed background img 2')
+        img(src='/assets/RuongThang.jpg', alt='Unsplashed background img 2')
     .container
       .section
         .row
