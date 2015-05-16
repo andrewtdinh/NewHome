@@ -11,34 +11,23 @@ html(lang='en')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
-    nav.blue(role='navigation')
+    nav.white.lighten-5.accent-1(role='navigation')
       .nav-wrapper.container
-        a#logo-container.brand-logo(href='#') Logo
-        ul.right.hide-on-med-and-down
-          li
-            a(href='#') Navbar Link
-        ul#nav-mobile.side-nav
-          li
-            a(href='#') Navbar Link
-        a.button-collapse(href='#', data-activates='nav-mobile')
-          i.mdi-navigation-menu
+        a#logo-container.brand-logo.right
+          img(src='/assets/ALogo.png')
     #index-banner.parallax-container
       .section.no-pad-bot
         .container
-          br
-          br
-          h1.header.center.teal-text.text-lighten-2 Parallax Template
-          .row.center
-            h5.header.col.s12.light A modern responsive front-end framework based on Material Design
-          .row.center
-            a#download-button.btn-large.waves-effect.waves-light.teal.lighten-1(href='http://materializecss.com/getting-started.html') Get Started
-          br
-          br
+          h1.header.right.indigo-text Andrew Trieu Dinh
+          .row
+            .col.s12: h5.header.right.indigo-text A Mongo Hapi Angular Node Full Stack Web Devevloper
       .parallax
-        img(src='/assets/success.jpg', alt='Unsplashed background img 2')
+        img(src='/assets/GG.jpg', alt='Golden Gate Bridge')
     .container
       .section
-        // Icon Section
+        .row
+          .col.s12.m12.center: h4 Portfolio
+      .section
         .row
           .col.s12.m4
             .icon-block
@@ -46,6 +35,10 @@ html(lang='en')
                 i.mdi-image-flash-on
               h5.center Speeds up development
               p.light
+                | We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+                | We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+                | We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+                | We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
                 | We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
           .col.s12.m4
             .icon-block
@@ -67,7 +60,7 @@ html(lang='en')
           .row.center
             h5.header.col.s12.light A modern responsive front-end framework based on Material Design
       .parallax
-        img(src='/assets/RuongThang.jpg', alt='Unsplashed background img 2')
+        img(src='/assets/RuongThang.jpg', alt='Rice Fields of Viet Nam')
     .container
       .section
         .row
@@ -83,7 +76,7 @@ html(lang='en')
           .row.center
             h5.header.col.s12.light A modern responsive front-end framework based on Material Design
       .parallax
-        img(src='background2.jpg', alt='Unsplashed background img 3')
+        img(src='/assets/HoHoanKiem.jpg', alt='Unsplashed background img 3')
     footer.page-footer.teal
       .container
         .row
