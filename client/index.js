@@ -3,7 +3,8 @@
 $(document).ready(init);
 
 function init(){
-  $('.card').hover(flipForth, flipBack);
+  // $('.card').hover(flipForth, flipBack);
+  $('.flipper').hover(flipForth, flipBack);
 }
 
 function flipForth(){

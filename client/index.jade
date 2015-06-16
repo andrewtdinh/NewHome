@@ -37,13 +37,11 @@ html(lang='en')
                 .card-content.center
                   p This was one of my first project using HTML, CSS, and jQuery.  It was completed in one night.
                   p: a(href='http://www.google.com') This is a link
-            .cardContainer
-              .card.small
-                .face.cardFront
-                  img.cards(src='/assets/calc.png')
-                .face.cardBack
-                  p This was one of my first project using HTML, CSS, and jQuery.  It was completed in one night.
-                  p: a(href='http://www.google.com') This is a link
+            .outerContainer
+              .flipper
+                figure.front front
+                figure.back back
+            
             .icon-block
               h2.center.brown-text
                 i.mdi-image-flash-on

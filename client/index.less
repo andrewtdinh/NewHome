@@ -53,25 +53,63 @@ p {
   }
 }
 .cards{
-  height: 100px;
-  padding: 0 15px;
-  background-image: src('/assets/calc.png');
+  height: 100%;
+  // padding: 0 15px;
+  // background-image: src('/assets/calc.png');
 }
 
 .icon-block {
-  // padding: 0 15px;
+  padding: 0 15px;
 }
 
 footer.page-footer {
   margin: 0;
 }
 
-.cardContainer{
+// .cardContainer{
+//   position: relative;
+//   perspective: 800px;
+// }
+//
+// .card {
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   transform-style: preserve-3d;
+//   transition: transform 1s;
+// }
+
+// figure {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   // backface-visibility: hidden;
+// }
+
+// .cardFront {
+//   background: green;
+//   backface-visibility: hidden;
+// }
+//
+// .cardBack {
+//   background: blue;
+//   transform: rotateY(180deg);
+//   backface-visibility: hidden;
+// }
+//
+// .card.flipped {
+//   transform: rotateY(180deg);
+// }
+
+// Testing
+.outerContainer {
+  width: 100%;
+  height: 300px;
   position: relative;
   perspective: 800px;
 }
 
-.card {
+.flipper {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -79,22 +117,23 @@ footer.page-footer {
   transition: transform 1s;
 }
 
-.card .face {
+.flipper figure {
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.card .cardFront {
-  background: green;
+.flipper .front {
+  background: yellow;
 }
 
-.card .cardBack {
-  background: blue;
+.flipper .back {
+  background: green;
   transform: rotateY(180deg);
 }
 
-.card.flipped {
+.flipper.flipped {
   transform: rotateY(180deg);
 }
