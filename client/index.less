@@ -123,20 +123,28 @@ footer.page-footer {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 3%;
+  padding: 3%;
 }
 
 .flipper .front {
   margin-left: -15%;
-  background: yellow;
+  background: #2B3E50;
   margin-left: 0px;
 }
 
 .flipper .back {
-  background: green;
+  // background: #009688;
   transform: rotateY(180deg);
   margin-left: 0px;
 }
 
 .flipper.flipped {
   transform: rotateY(180deg);
+}
+
+.cardLink {
+  position: absolute;
+  bottom: 5%;
+  left: 9%;
 }
