@@ -4,7 +4,7 @@ html(lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
-    title Andrew Trieu Dinh
+    title Andrew Trieu Dinh Portfolio
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='/vendor/materialize/dist/css/materialize.min.css', media='screen,projection')
     //- link(rel='stylesheet', type='text/css', href='/vendor/materialize/templates/parallax-template/css/style.css', media='screen,projection')
@@ -18,9 +18,14 @@ html(lang='en')
     #index-banner.parallax-container
       .section.no-pad-bot
         .container
-          h2.header.right Andrew Trieu Dinh
+          #nameContainer.right
+            h2#firstName.right Andrew
+            h4#fullName Trieu &nbsp; Dinh
+          //- #name
+          //- h2.header.right#fullName Andrew Trieu Dinh
           .row
-            .col.s12: h5.header.right A Mongo Hapi Angular Node Full Stack Web Dev
+            .col.s12: h5.header.right.tag A Mongo Hapi Angular Node
+            .col.s12: h5.header.right.tag Full Stack Web Dev
       .parallax
         img(src='/assets/GG.jpg', alt='Golden Gate Bridge')
     .container
