@@ -1,9 +1,9 @@
+
 'use strict';
 
 $(document).ready(init);
 
 function init(){
-  // $('.card').hover(flipForth, flipBack);
   $('.flipper').hover(flipForth, flipBack);
 }
 
